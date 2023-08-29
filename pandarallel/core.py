@@ -263,8 +263,9 @@ def parallelize_with_memory_file_system(
                     pickle.dump(chunk, file_descriptor)
 
             dilled_user_defined_function = dill.dumps(user_defined_function)
-            manager: SyncManager = CONTEXT.Manager()
-            master_workers_queue = manager.Queue()
+            #manager: SyncManager = CONTEXT.Manager()
+            #master_workers_queue = manager.Queue()
+            master_workers_queue = CONTEXT.Queue()
 
             work_args_list = [
                 (
