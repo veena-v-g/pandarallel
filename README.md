@@ -36,6 +36,8 @@ df.parallel_apply(func)
 
 Be sure to check out the [documentation](https://nalepae.github.io/pandarallel).
 
+Please note that the master branch in this repository is set to be in line with [applio's branch, feature-control-number-of-progress-bars](https://github.com/applio/pandarallel/tree/feature-control-number-of-progress-bars). 
+
 ## Examples
 
 An example of each available `pandas` API is available:
